@@ -1,10 +1,10 @@
--name: check number less tan 10
+- name: check number less tan 10
   hosts: local
   connection: local
   vars:
     NUMBER_OF_SERVERS: 7
-    tasks:
+  tasks:
       - name: check if number of servers is less than 10
-        debug:
+        ansible.builtin.debug:
           msg: "Number of servers is less than 10"
         when: NUMBER_OF_SERVERS < 10
