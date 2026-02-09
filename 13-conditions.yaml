@@ -6,5 +6,5 @@
   tasks:
   - name: check live or not
     ansible.builtin.debug:
-      msg: "This is live environment"
+      msg: "This is live environment make sure to be careful"
     when: IS_LIVE
