@@ -1,0 +1,14 @@
+- name: John Doe
+  age: 25
+  email: john.doe@example.com
+  address:
+    street: 123 Main St
+    city: Springfield
+    state: IL
+    zip: 62705
+  skills:
+    - Java
+    - Python
+    - C++
+    - Data Analysis
+    

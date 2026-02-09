@@ -1,0 +1,30 @@
+{
+	"student": {
+		"firstName": "John",
+		"lastName": "Doe",
+		"age": "20",
+		"major": "Computer Science",
+		"dob": "2003-05-15",
+		"Addresses": {
+			"Permaddress": {
+				"street": "123 Main St",
+				"city": "Springfield",
+				"state": "IL",
+				"zip": "62704"
+			},
+			"Currentaddress": {
+				"street": "456 Elm St",
+				"city": "Springfield",
+				"state": "IL",
+				"zip": "62705"
+			}
+		}
+	},
+
+	"skills": [
+        "Java",
+        "Python",
+        "C++",
+        "Data Analysis"
+    ]
+}

@@ -1,0 +1,23 @@
+<!-- Student objects can be represented in XML format as follows: -->
+<student>
+
+    <firstName>John</firstName>
+    <lastName>Doe</lastName>
+    <age>20</age>
+    <major>Computer Science</major>
+    <dob>2003-05-15</dob>
+    <Addresses>
+        <Permaddress>
+            <street>123 Main St</street>
+            <city>Springfield</city>
+            <state>IL</state>
+            <zip>62704</zip>
+        </Permaddress>
+        <Currentaddress>
+            <street>456 Elm St</street>
+            <city>Springfield</city>
+            <state>IL</state>
+            <zip>62705</zip>
+        </Currentaddress>
+    </Addresses>
+</student>
