@@ -1,0 +1,7 @@
+- name : variable from args
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: print variable from args
+      ansible.builtin.debug:
+        msg: "The value of my_var is {{ my_var }}"
