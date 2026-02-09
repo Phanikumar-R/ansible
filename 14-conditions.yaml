@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:
-    NUMBER_OF_SERVERS: 7
+    NUMBER_OF_SERVERS: 12
   tasks:
       - name: check if number of servers is less than 10
         ansible.builtin.debug:
