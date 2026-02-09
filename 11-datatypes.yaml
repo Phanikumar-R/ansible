@@ -1,0 +1,27 @@
+- name: demo on datatype
+  hosts: local
+  connection: local
+  vars:
+    my_string: "Hello, World!"
+    my_integer: 42
+    my_float: 3.14
+    my_boolean: true
+    my_list:
+      - item1
+      - item2
+      - item3
+    my_dict:
+      key1: value1
+      key2: value2
+      key3: value3
+    IS_LIVE: true
+    task:
+      name: print variables
+      ansible.builtin.debug:
+        msg: |
+          String: {{ my_string }}
+          Integer: {{ my_integer }}
+          Float: {{ my_float }}
+          Boolean: {{ my_boolean }}
+          List: {{ my_list }}
+          Dictionary: {{ my_dict }}
