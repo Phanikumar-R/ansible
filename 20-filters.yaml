@@ -3,11 +3,24 @@
   connection: local
   vars:
     topics: ansible, devops, automation
-    tags:
+    tagsMap:
       name: ansible
       project: roboshop
       component: catalogue
-      
+    tagsList: [
+        {
+            "key": "name",
+            "value": "ansible"
+        },
+        {
+            "key": "project",
+            "value": "roboshop"
+        },
+        {
+            "key": "component",
+            "value": "catalogue"
+        }
+    ]
  
   tasks:
     - name: greeting
@@ -20,7 +33,7 @@
 
     - name: convert map to list
       ansible.builtin.debug:
-        msg: "{{ tags|dict2items }}"
+        msg: "{{ tagsMap|dict2items }}"
     - name: convert list to map
       ansible.builtin.debug:
-        msg: "{{ tags|items2dict }}"
+        msg: "{{ tagsList|items2dict }}"
