@@ -10,4 +10,13 @@
     - name: print user details
       ansible.builtin.debug:
           msg: "{{ user_output }}"
+
+    - name: create user
+      ansible.builtin.command: useradd roboshop
+      when: user_output.rc != 0
+      register: create_user
+    - name: print user creation details
+      ansible.builtin.debug:
+          msg: "{{ create_user }}"
           
+        
