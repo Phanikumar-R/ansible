@@ -1,0 +1,14 @@
+- name: learning playbook fundamentals
+  hosts: local
+  connection: local
+  tasks:
+    - name: print hello world
+      ansible.builtin.debug:
+        msg: "Hello World"
+ # plays of a playbook should be in list format
+    - name: print hello world first time
+      ansible.builtin.debug:
+        msg: "Hello World Again"
+    - name: print hello world again and again
+      ansible.builtin.debug:
+        msg: "Hello World Again and Again"
