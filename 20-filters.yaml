@@ -48,3 +48,6 @@
     - name: convert to upper case
       ansible.builtin.debug:
         msg: "{{ course | upper }}"
+    - name: convert to camel case
+      ansible.builtin.debug:
+        msg: "{{ course | camelcase }}" 
