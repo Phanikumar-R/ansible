@@ -7,11 +7,11 @@
         msg : "{{ ansible_facts }}"
     - name: check package manager is redhat or not
       ansible.builtin.debug:
-        msg: "This is redhat based system"
+        msg: "Package manager is redhat "
       when: ansible_facts["os_family"] == "RedHat"
     - name: check package manager is debian or not
       ansible.builtin.debug:
-        msg: "This is debian based system"
+        msg: "Package manager is debian"
       when: ansible_facts["os_family"] == "Debian"
 
 
