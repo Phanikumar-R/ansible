@@ -58,3 +58,11 @@
     - name: validate IP address
       ansible.builtin.debug:
         msg: "{{ myIP | ansible.utils.ipv4}}"
+        then:
+          - name: valid IP address
+            ansible.builtin.debug:
+              msg: "valid IP address"
+        else:
+          - name: invalid IP address
+            ansible.builtin.debug:
+              msg: "invalid IP address"
