@@ -3,12 +3,21 @@
   connection: local
   vars:
     topics: ansible, devops, automation
+  tags:
+    name: ansible
+    project: roboshop
+    component: catalogue
+
     
   tasks:
     - name: greeting
       ansible.builtin.debug:
         msg: "Hello Phanikumar {{ GREETING | default('Welcome to Ansible') }}"
-        
+
     - name: convert string to list
       ansible.builtin.debug:
         msg: "{{ topics|split(',') }}"
+
+    - name: convert map to list
+      ansible.builtin.debug:
+        msg: "{{ tags|dict2items }}"
