@@ -51,3 +51,6 @@
     - name: convert to lower case
       ansible.builtin.debug:
         msg: "{{ course | lower }}" 
+    - name: getting ipv4 address
+      ansible.builtin.debug:
+        msg: "{{ ansible_default_ipv4.address }}"
