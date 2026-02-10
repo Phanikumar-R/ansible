@@ -3,6 +3,7 @@
   connection: local
   vars:
     topics: ansible, devops, automation
+    course: "ansible for beginners"
     tagsMap:
       name: ansible
       project: roboshop
@@ -46,4 +47,4 @@
         msg: "{{ student_yaml | to_json }}"
     - name: convert to upper case
       ansible.builtin.debug:
-        msg: "{{ 'ansible' | upper }}"
+        msg: "{{ course | upper }}"
